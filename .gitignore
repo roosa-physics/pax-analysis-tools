@@ -53,3 +53,9 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+#ROOT and CSV file containing data 
+.root
+.csv
+
+
