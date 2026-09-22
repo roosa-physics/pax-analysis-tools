@@ -1,4 +1,4 @@
-#Recalibrating PAX data
+# Recalibrating PAX data
 
 When doing the initial analysis we used the built-in MASS autocalibrate tools.
 This tool is great but is not built to replace a real science level calibration.
@@ -16,15 +16,15 @@ Contents
 
 Presented as a "work flow"
 1. Sn-Ka preparation:
-** Takes MDFGME outputs and makes a model spectrum
+    * Takes MDFGME outputs and makes a model spectrum
 
 2. Detector_Response:
-** Convolve model spectrum with detector response
+    * Convolve model spectrum with detector response
 
 3. Fitting (to-be-added):
-** Fits the convolved spectrum to the data and extracts calibration knots
+    * Fits the convolved spectrum to the data and extracts calibration knots
 
 4. Apply_Recalibration (to-be-added)
-** Takes calibration knots, makes a spline
-** Reads old csv data and generates new energies
-** logs spectrum resolution and fit uncertainties
+    * Takes calibration knots, makes a spline
+    * Reads old csv data and generates new energies
+    * logs spectrum resolution and fit uncertainties
