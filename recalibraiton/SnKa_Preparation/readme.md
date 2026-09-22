@@ -20,7 +20,7 @@ or equivalent, and clean it up after.
 
 
 `plotlines.C` skips the saving process and is just nice if you want to look at the spectrum. I added a little ATan background aswell. 
-![model]{toy_withescapes_withbkg.png}
+![model](./toy_withescapes_withbkg.png)
 
 
 
