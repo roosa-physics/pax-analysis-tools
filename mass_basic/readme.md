@@ -6,19 +6,19 @@ The target of this notebook is to give a rough outline of the workflow we tend t
 
 Checking summary data: 
 
-![channel summary](mass_basic/run22ch9_summaries.png)
+![channel summary](./run22ch9_summaries.png)
 
 
 Checking Noise: 
 
-![Run Noise](mass_basic/run22_noise.png)
+![Run Noise](./run22_noise.png)
 
 
 And most importantly: Generating Spectra !!
 
-![Spectrum](mass_basic/run22coadd_spectrum_nominal.png)
+![Spectrum](./run22coadd_spectrum_nominal.png)
 
-![Prompt Spectrum](mass_basic/run22coadd_prompt_spectrum_nominal.png)
+![Prompt Spectrum](./run22coadd_prompt_spectrum_nominal.png)
 
 
 As well as: 
@@ -30,7 +30,7 @@ As well as:
 Note
 --
 
-You will need the .py files in ![Utils](Utils) to run this.
+You will need the .py files in ![Utils](../Utils) to run this.
 
 There are some bugs that were fixed there and making some of the plot functions are hidden away there aswell. 
 
