@@ -25,5 +25,4 @@ or equivalent, and clean it up after.
 
 
 
-
-This is not an exact copy of the working directory. 
+![Next step](https://github.com/roosa-physics/pax-analysis-tools/tree/main/recalibraiton/Detector_Response)
