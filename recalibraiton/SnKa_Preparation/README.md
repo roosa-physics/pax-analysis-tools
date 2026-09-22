@@ -26,4 +26,4 @@ or equivalent, and clean it up after.
 
 
 
-* not an exact copy of the working directory
+This is not an exact copy of the working directory. 
