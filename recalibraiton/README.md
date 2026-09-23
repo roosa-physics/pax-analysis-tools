@@ -21,10 +21,10 @@ Presented as a "work flow"
 2. Detector_Response:
     * Convolve model spectrum with detector response
 
-3. Fitting (to-be-added):
+3. Fit_Spectrum:
     * Fits the convolved spectrum to the data and extracts calibration knots
 
-4. Apply_Recalibration (to-be-added)
+4. Apply_Recalibration:
     * Takes calibration knots, makes a spline
     * Reads old csv data and generates new energies
     * logs spectrum resolution and fit uncertainties
