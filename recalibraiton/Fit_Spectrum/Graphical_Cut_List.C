@@ -1,0 +1,304 @@
+{
+  //Leftovers in res rma and risetime with negative lnt cut 
+  TCutG CUTG_NEGLNT = TCutG("CUTG_NEGLNT",31);
+  CUTG_NEGLNT.SetVarX("RiseTime");
+  CUTG_NEGLNT.SetVarY("fRes_rms");
+  CUTG_NEGLNT.SetTitle("CUTG_NEGLNT");
+  CUTG_NEGLNT.SetFillStyle(1000);
+  CUTG_NEGLNT.SetLineColor(2);
+  CUTG_NEGLNT.SetLineWidth(3);
+  CUTG_NEGLNT.SetPoint(0,1.02956,4.1584);
+  CUTG_NEGLNT.SetPoint(1,1.02354,3.67864);
+  CUTG_NEGLNT.SetPoint(2,1.01785,3.19889);
+  CUTG_NEGLNT.SetPoint(3,1.00848,3.67864);
+  CUTG_NEGLNT.SetPoint(4,1.00513,2.79909);
+  CUTG_NEGLNT.SetPoint(5,0.994081,2.95901);
+  CUTG_NEGLNT.SetPoint(6,0.989394,3.83856);
+  CUTG_NEGLNT.SetPoint(7,0.982365,4.07844);
+  CUTG_NEGLNT.SetPoint(8,0.978348,5.91751);
+  CUTG_NEGLNT.SetPoint(9,0.978682,6.87702);
+  CUTG_NEGLNT.SetPoint(10,0.976674,8.3163);
+  CUTG_NEGLNT.SetPoint(11,0.979687,10.0754);
+  CUTG_NEGLNT.SetPoint(12,0.98203,11.0349);
+  CUTG_NEGLNT.SetPoint(13,0.98203,12.2343);
+  CUTG_NEGLNT.SetPoint(14,0.986382,13.5936);
+  CUTG_NEGLNT.SetPoint(15,0.992072,13.4337);
+  CUTG_NEGLNT.SetPoint(16,0.997428,15.2728);
+  CUTG_NEGLNT.SetPoint(17,0.999772,17.5116);
+  CUTG_NEGLNT.SetPoint(18,1.00781,17.4317);
+  CUTG_NEGLNT.SetPoint(19,1.01249,16.2323);
+  CUTG_NEGLNT.SetPoint(20,1.01785,15.9124);
+  CUTG_NEGLNT.SetPoint(21,1.01986,17.1118);
+  CUTG_NEGLNT.SetPoint(22,1.02053,18.711);
+  CUTG_NEGLNT.SetPoint(23,1.02889,17.1918);
+  CUTG_NEGLNT.SetPoint(24,1.04095,14.7131);
+  CUTG_NEGLNT.SetPoint(25,1.05467,10.1554);
+  CUTG_NEGLNT.SetPoint(26,1.05768,6.15739);
+  CUTG_NEGLNT.SetPoint(27,1.05065,4.71812);
+  CUTG_NEGLNT.SetPoint(28,1.04195,4.63816);
+  CUTG_NEGLNT.SetPoint(29,1.03492,5.11791);
+  CUTG_NEGLNT.SetPoint(30,1.02956,4.1584);
+
+  
+  
+  // upward trending feature found in rms vs rise time
+  TCutG CUTG_UP = TCutG("CUTG_UP",14);
+  CUTG_UP.SetVarX("RiseTime");
+  CUTG_UP.SetVarY("fRes_rms");
+  CUTG_UP.SetTitle("CUTG_UP");
+  CUTG_UP.SetFillStyle(1000);
+  CUTG_UP.SetLineColor(2);
+  CUTG_UP.SetLineWidth(3);
+  CUTG_UP.SetPoint(0,1.00587,3.70861);
+  CUTG_UP.SetPoint(1,1.00857,4.68827);
+  CUTG_UP.SetPoint(2,1.01464,6.0386);
+  CUTG_UP.SetPoint(3,1.01684,7.38894);
+  CUTG_UP.SetPoint(4,1.01161,7.892);
+  CUTG_UP.SetPoint(5,1.00654,7.94496);
+  CUTG_UP.SetPoint(6,1.01059,11.0428);
+  CUTG_UP.SetPoint(7,1.0111,13.4257);
+  CUTG_UP.SetPoint(8,1.0111,14.6437);
+  CUTG_UP.SetPoint(9,1.0008,13.6375);
+  CUTG_UP.SetPoint(10,0.989151,6.85939);
+  CUTG_UP.SetPoint(11,0.992865,3.62918);
+  CUTG_UP.SetPoint(12,1.0057,3.44384);
+  CUTG_UP.SetPoint(13,1.00587,3.70861);
+  
+  //Positive tail off of a cal line in Energy vs avg residual
+   TCutG CUTG_ERA_PTAIL =  TCutG("CUTG_ERA_PTAIL",5);
+   CUTG_ERA_PTAIL.SetVarX("Energy");
+   CUTG_ERA_PTAIL.SetVarY("fRes_avg");
+   CUTG_ERA_PTAIL.SetTitle("CUTG_ERA_PTAIL");
+   CUTG_ERA_PTAIL.SetFillStyle(1000);
+   CUTG_ERA_PTAIL.SetLineColor(50);
+   CUTG_ERA_PTAIL.SetLineWidth(3);
+   CUTG_ERA_PTAIL.SetPoint(0,120822,7.56745);
+   CUTG_ERA_PTAIL.SetPoint(1,123579,7.56745);
+   CUTG_ERA_PTAIL.SetPoint(2,122870,87.0414);
+   CUTG_ERA_PTAIL.SetPoint(3,119404,86.7266);
+   CUTG_ERA_PTAIL.SetPoint(4,120822,7.56745);
+  
+  //Negative Branch cut on energy vs avg residual
+  TCutG CUTG_ERA_NBR = TCutG("CUTG_ERA_NBR",5);
+  CUTG_ERA_NBR.SetVarX("Energy");
+  CUTG_ERA_NBR.SetVarY("fRes_avg");
+  CUTG_ERA_NBR.SetTitle("CUTG_ERA_NBR");
+  CUTG_ERA_NBR.SetFillStyle(1000);
+  CUTG_ERA_NBR.SetLineColor(42);
+  CUTG_ERA_NBR.SetLineWidth(3);
+  CUTG_ERA_NBR.SetPoint(0,32050.4,-9.58633);
+  CUTG_ERA_NBR.SetPoint(1,141144,-36.3399);
+  CUTG_ERA_NBR.SetPoint(2,124288,-42.6349);
+  CUTG_ERA_NBR.SetPoint(3,17950.9,-8.79946);
+  CUTG_ERA_NBR.SetPoint(4,32050.4,-9.58633);
+  
+  //Negative Blob Cut in Energy Vs Avg Residual
+  TCutG CUTG_ERA_NBL = TCutG("CUTG_ERA_NBL",9);
+  CUTG_ERA_NBL.SetVarX("Energy");
+  CUTG_ERA_NBL.SetVarY("fRes_avg");
+  CUTG_ERA_NBL.SetTitle("CUTG_ERA_NBL");
+  CUTG_ERA_NBL.SetFillStyle(1000);
+  CUTG_ERA_NBL.SetLineColor(6);
+  CUTG_ERA_NBL.SetLineWidth(3);
+  CUTG_ERA_NBL.SetPoint(0,116805,-5.80935);
+  CUTG_ERA_NBL.SetPoint(1,114442,-9.74371);
+  CUTG_ERA_NBL.SetPoint(2,116254,-19.0288);
+  CUTG_ERA_NBL.SetPoint(3,118695,-21.5468);
+  CUTG_ERA_NBL.SetPoint(4,122555,-20.2878);
+  CUTG_ERA_NBL.SetPoint(5,121295,-13.0486);
+  CUTG_ERA_NBL.SetPoint(6,118853,-5.65198);
+  CUTG_ERA_NBL.SetPoint(7,117750,-5.17986);
+  CUTG_ERA_NBL.SetPoint(8,116805,-5.80935);
+
+  
+  // High branch cut on Energy vs Residual RMS
+  TCutG CUTG_ERR_HBR = TCutG("CUTG_ERR_HBR",7);
+  CUTG_ERR_HBR.SetVarX("Energy");
+  CUTG_ERR_HBR.SetVarY("fRes_rms");
+  CUTG_ERR_HBR.SetTitle("CUTG_ERR_HBR");
+  CUTG_ERR_HBR.SetFillStyle(1000);
+  CUTG_ERR_HBR.SetLineColor(6);
+  CUTG_ERR_HBR.SetLineWidth(2);
+  CUTG_ERR_HBR.SetPoint(0,3378.8,4.6232);
+  CUTG_ERR_HBR.SetPoint(1,-8.23456,0.00539508);
+  CUTG_ERR_HBR.SetPoint(2,60879.6,49.8244);
+  CUTG_ERR_HBR.SetPoint(3,60485.7,78.5969);
+  CUTG_ERR_HBR.SetPoint(4,41738.9,76.9096);
+  CUTG_ERR_HBR.SetPoint(5,2354.81,8.70818);
+  CUTG_ERR_HBR.SetPoint(6,3378.8,4.6232);
+  
+
+  
+  //Upper Branch Cut on Energy vs Leading Residual
+  TCutG CUTG_ERL_UBR = TCutG("CUTG_ERL_UBR",6);
+  CUTG_ERL_UBR.SetVarX("Energy");
+  CUTG_ERL_UBR.SetVarY("fRes_lnt");
+  CUTG_ERL_UBR.SetTitle("CUTG_ERL_UBR");
+  CUTG_ERL_UBR.SetFillStyle(1000);
+  CUTG_ERL_UBR.SetLineColor(6);
+  CUTG_ERL_UBR.SetLineWidth(3);
+  CUTG_ERL_UBR.SetPoint(0,7868.59,85.8813);
+  CUTG_ERL_UBR.SetPoint(1,120665,7175.58);
+  CUTG_ERL_UBR.SetPoint(2,112867,14736.29);
+  CUTG_ERL_UBR.SetPoint(3,2906.19,697.392);
+  CUTG_ERL_UBR.SetPoint(4,3851.41,-238.984);
+  CUTG_ERL_UBR.SetPoint(5,7868.59,85.8813);
+  
+  
+  //Signal of interest in Energy-Time
+  TCutG CUTG_TE_SOI = TCutG("CUTG_TE_SOI",16);
+  CUTG_TE_SOI.SetVarY("dT_trig");
+  CUTG_TE_SOI.SetVarX("Energy");
+  CUTG_TE_SOI.SetTitle("CUTG_TE_SOI");
+  CUTG_TE_SOI.SetFillStyle(1000);
+  CUTG_TE_SOI.SetLineColor(3);
+  CUTG_TE_SOI.SetLineWidth(3);
+  CUTG_TE_SOI.SetPoint(0,244335,1.05811);
+  CUTG_TE_SOI.SetPoint(1,245011,1.03322);
+  CUTG_TE_SOI.SetPoint(2,44867.9,1.03398);
+  CUTG_TE_SOI.SetPoint(3,23906.9,1.03926);
+  CUTG_TE_SOI.SetPoint(4,14440.7,1.04981);
+  CUTG_TE_SOI.SetPoint(5,7002.95,1.06414);
+  CUTG_TE_SOI.SetPoint(6,6326.79,1.29786);
+  CUTG_TE_SOI.SetPoint(7,17145.3,1.29409);
+  CUTG_TE_SOI.SetPoint(8,1.22171,23906.9);
+  CUTG_TE_SOI.SetPoint(9,32020.9,1.11013);
+  CUTG_TE_SOI.SetPoint(10,40811,1.08299);
+  CUTG_TE_SOI.SetPoint(11,54334.2,1.06791);
+  CUTG_TE_SOI.SetPoint(12,71238.2,1.06564);
+  CUTG_TE_SOI.SetPoint(13,92875.3,1.06338);
+  CUTG_TE_SOI.SetPoint(14,242983,1.05811);
+  CUTG_TE_SOI.SetPoint(15,244335,1.05811);
+
+  //Beam flash signal in Energy-Time
+  TCutG CUTG_TE_FLASH = TCutG("CUTG_TE_FLASH",12);
+  CUTG_TE_FLASH.SetVarY("dT_trig");
+  CUTG_TE_FLASH.SetVarX("Energy");
+  CUTG_TE_FLASH.SetTitle("CUTG_TE_FLASH");
+  CUTG_TE_FLASH.SetFillStyle(1000);
+  CUTG_TE_FLASH.SetLineColor(2);
+  CUTG_TE_FLASH.SetLineWidth(3);
+  CUTG_TE_FLASH.SetPoint(0,247592,1.01048);
+  CUTG_TE_FLASH.SetPoint(1,8225.44,1.01048);
+  CUTG_TE_FLASH.SetPoint(2,1555.8,1.0227);
+  CUTG_TE_FLASH.SetPoint(3,5261.16,1.0447);
+  CUTG_TE_FLASH.SetPoint(4,7484.37,1.06426);
+  CUTG_TE_FLASH.SetPoint(5,17118.3,1.04552);
+  CUTG_TE_FLASH.SetPoint(6,22305.8,1.03981);
+  CUTG_TE_FLASH.SetPoint(7,34904,1.03493);
+  CUTG_TE_FLASH.SetPoint(8,56395.1,1.0333);
+  CUTG_TE_FLASH.SetPoint(9,91225.4,1.03248);
+  CUTG_TE_FLASH.SetPoint(10,244627,1.03248);
+  CUTG_TE_FLASH.SetPoint(11,247592,1.01048);
+ 
+ 
+  //Fast photon hit in Risetime-time 
+  TCutG CUTG_FP = TCutG("CUTG_FP",10);
+  CUTG_FP.SetVarX("dT_trig");
+  CUTG_FP.SetVarY("RiseTime");
+  CUTG_FP.SetTitle("CUTG_FP");
+  CUTG_FP.SetFillStyle(1000);
+  CUTG_FP.SetLineColor(6);
+  CUTG_FP.SetLineWidth(3);
+  CUTG_FP.SetPoint(0,1.03215,0.977776);
+  CUTG_FP.SetPoint(1,1.03224,0.944252);
+  CUTG_FP.SetPoint(2,1.03533,0.912493);
+  CUTG_FP.SetPoint(3,1.0421,0.857797);
+  CUTG_FP.SetPoint(4,1.04707,0.833096);
+  CUTG_FP.SetPoint(5,1.05293,0.837507);
+  CUTG_FP.SetPoint(6,1.05676,0.904554);
+  CUTG_FP.SetPoint(7,1.0601,0.980422);
+  CUTG_FP.SetPoint(8,1.03281,0.978658);
+  CUTG_FP.SetPoint(9,1.03215,0.977776);
+
+  
+  //Slow photon in Risetime-time
+  TCutG CUTG_SP = TCutG("CUTG_SP",13);
+  CUTG_SP.SetVarX("dT_trig");
+  CUTG_SP.SetVarY("RiseTime");
+  CUTG_SP.SetTitle("CUTG_SP");
+  CUTG_SP.SetFillStyle(1000);
+  CUTG_SP.SetLineColor(8);
+  CUTG_SP.SetLineWidth(3);
+  CUTG_SP.SetPoint(0,1.06173,.98);
+  CUTG_SP.SetPoint(1,1.06874,1.03247);
+  CUTG_SP.SetPoint(2,1.07795,1.03512);
+  CUTG_SP.SetPoint(3,1.09286,1.04394);
+  CUTG_SP.SetPoint(4,1.09376,1.07305);
+  CUTG_SP.SetPoint(5,1.07282,1.0854);
+  CUTG_SP.SetPoint(6,1.0597,1.07835);
+  CUTG_SP.SetPoint(7,1.05187,1.08717);
+  CUTG_SP.SetPoint(8,1.03525,1.07835);
+  CUTG_SP.SetPoint(9,1.0293,1.03512);
+  CUTG_SP.SetPoint(10,1.02808,1.02541);
+  CUTG_SP.SetPoint(11,1.02832,.98);
+  CUTG_SP.SetPoint(12,1.06116,.98);
+
+  
+  //Charged particle hit in Risetime Time
+  TCutG CUTG_CP =  TCutG("CUTG_CP",18);
+  CUTG_CP.SetVarX("dT_trig");
+  CUTG_CP.SetVarY("RiseTime");
+  CUTG_CP.SetTitle("CUTG_CP");
+  CUTG_CP.SetFillStyle(1000);
+  CUTG_CP.SetLineColor(2);
+  CUTG_CP.SetLineWidth(3);
+  CUTG_CP.SetPoint(0,1.02083,0.968954);
+  CUTG_CP.SetPoint(1,1.02612,0.9716);
+  CUTG_CP.SetPoint(2,1.03158,0.929255);
+  CUTG_CP.SetPoint(3,1.03827,0.877206);
+  CUTG_CP.SetPoint(4,1.04267,0.838389);
+  CUTG_CP.SetPoint(5,1.04218,0.775753);
+  CUTG_CP.SetPoint(6,1.04242,0.741348);
+  CUTG_CP.SetPoint(7,1.04617,0.714);
+  CUTG_CP.SetPoint(8,1.04984,0.664597);
+  CUTG_CP.SetPoint(9,1.04682,0.614312);
+  CUTG_CP.SetPoint(10,1.03721,0.602843);
+  CUTG_CP.SetPoint(11,1.02995,0.645189);
+  CUTG_CP.SetPoint(12,1.01985,0.672537);
+  CUTG_CP.SetPoint(13,1.01162,0.723704);
+  CUTG_CP.SetPoint(14,1.01154,0.829567);
+  CUTG_CP.SetPoint(15,1.01243,0.916904);
+  CUTG_CP.SetPoint(16,1.01985,0.965425);
+  CUTG_CP.SetPoint(17,1.02083,0.968954);
+
+  //Pixel hit in energy vs Risetime
+  TCutG CUTG_ERT_PIX = TCutG("CUTG_ERT_PIX",9);
+  CUTG_ERT_PIX.SetVarX("Energy");
+  CUTG_ERT_PIX.SetVarY("RiseTime");
+  CUTG_ERT_PIX.SetTitle("CUTG_ERT_PIX");
+  CUTG_ERT_PIX.SetFillStyle(1000);
+  CUTG_ERT_PIX.SetLineColor(6);
+  CUTG_ERT_PIX.SetLineWidth(3);
+  CUTG_ERT_PIX.SetPoint(0,245814,0.925781);
+  CUTG_ERT_PIX.SetPoint(1,31156,0.999293);
+  CUTG_ERT_PIX.SetPoint(2,12084.3,1.01864);
+  CUTG_ERT_PIX.SetPoint(3,6809.15,1.15792);
+  CUTG_ERT_PIX.SetPoint(4,10867,1.19275);
+  CUTG_ERT_PIX.SetPoint(5,23040.4,1.1115);
+  CUTG_ERT_PIX.SetPoint(6,53879.7,1.06894);
+  CUTG_ERT_PIX.SetPoint(7,244191,0.978013);
+  CUTG_ERT_PIX.SetPoint(8,245814,0.925781);
+
+  //Substrate hit in energy vs Risetime
+  TCutG CUTG_ERT_SUB = TCutG("CUTG_ERT_SUB",12);
+  CUTG_ERT_SUB.SetVarX("Energy");
+  CUTG_ERT_SUB.SetVarY("RiseTime");
+  CUTG_ERT_SUB.SetTitle("CUTG_ERT_SUB");
+  CUTG_ERT_SUB.SetFillStyle(1000);
+  CUTG_ERT_SUB.SetLineColor(30);
+  CUTG_ERT_SUB.SetLineWidth(3);
+  CUTG_ERT_SUB.SetPoint(0,7062.84,1.02772);
+  CUTG_ERT_SUB.SetPoint(1,20354.4,0.925458);
+  CUTG_ERT_SUB.SetPoint(2,68773.6,0.893165);
+  CUTG_ERT_SUB.SetPoint(3,161340,0.860872);
+  CUTG_ERT_SUB.SetPoint(4,242988,0.831269);
+  CUTG_ERT_SUB.SetPoint(5,242038,0.753227);
+  CUTG_ERT_SUB.SetPoint(6,123364,0.777447);
+  CUTG_ERT_SUB.SetPoint(7,42190.5,0.785521);
+  CUTG_ERT_SUB.SetPoint(8,8012.24,0.772065);
+  CUTG_ERT_SUB.SetPoint(9,4689.35,0.780138);
+  CUTG_ERT_SUB.SetPoint(10,4214.65,1.01426);
+  CUTG_ERT_SUB.SetPoint(11,7062.84,1.02772);
+  
+}
