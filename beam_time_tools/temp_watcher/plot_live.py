@@ -81,8 +81,10 @@ def print_status(df, status_prd = 4*60):
         top = max(get_temp(df))
         btm = min(get_temp(df))
         scale =  top - btm
-        ax.text(-1, top+.10*scale , "Temp. dRMS :" + str(drms*1e6) + " uK")
-        ax.text(-1, top+.06*scale , "Temp. Mean :" + str(mean*1e3) + " mK")
+        print_drms = "{:.2f}".format(drms*1e6)
+        print_mean = "{:.2f}".format(mean*1e3)
+        ax.text(-1, top+.10*scale , "Temp. dRMS: " + print_drms + " uK")
+        ax.text(-1, top+.06*scale , "Temp. Mean: " + print_mean + " mK")
         
 print_status(df)
 fig.legend()
