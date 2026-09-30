@@ -14,4 +14,4 @@ If I've done it right, this does not hold anything in the cache and has at least
 Example output: 
 `python plot_live.py ADRLog_example.txt`
 
-![Eample](./Figure_1.png)
+![Example](./Figure_1.png)
