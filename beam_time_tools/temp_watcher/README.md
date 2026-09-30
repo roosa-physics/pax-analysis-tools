@@ -8,6 +8,10 @@ plot_live.py
 --
 
 This plots (as written) the last hour of temp evolution with a rolling window.
-If I've done it right, this does not hod anything in the cache and has at least 1 night of over-night operations confirmed.
+If I've done it right, this does not hold anything in the cache and has at least 1 night of over-night operations confirmed.
 
 
+Example output: 
+`python plot_live.py ADRLog_example.txt`
+
+![Eample](./Figure_1.png)
