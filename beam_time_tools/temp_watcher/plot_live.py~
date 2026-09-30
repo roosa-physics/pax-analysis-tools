@@ -1,0 +1,69 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+import os
+import numpy as np
+from matplotlib.animation import FuncAnimation
+
+root_dir = "/data/ADRLogs"
+fname = root_dir+'/ADRLog_20260929_t133604.txt'
+
+minute = 60.
+hour = minute*60.
+
+max_time_window = 1.*hour
+
+max_rows = int(max_time_window/2.) #1 row / 2s 
+
+
+fig,ax = plt.subplots(1,1,figsize=(20,10))
+
+
+n_rows = sum(1 for row in open(fname, 'r'))
+file0 = 0
+if(n_rows>max_rows):
+        file0 = pd.read_csv(fname,header=None, skiprows=range(0, n_rows-max_rows))
+else:
+        file0 = pd.read_csv(fname,header=None)
+        
+line, = ax.plot((file0[1]-file0[1][np.argmax(file0[3])])/minute,file0[2], label="Temp. K")
+
+
+#ax.axhline(0.3,color='k',label='300 mK')
+ax.set_ylabel('Temperature [K]')
+ax.set_xlabel('Time [min]')
+
+
+axHO = ax.twinx()
+lineHO, = axHO.plot([],[],color='red', label="H.O. %")
+axHO.set_ylabel('Heater Out [%]', color='red')        
+axHO.set_ylim(0,80)
+
+fig.legend()
+        
+
+
+def update(frame):      
+        
+        n_rows = sum(1 for row in open(fname, 'r'))
+        file0 = 0
+        if(n_rows>max_rows):
+                file0 = pd.read_csv(fname,header=None, skiprows=range(0, n_rows-max_rows))
+        else:
+                file0 = pd.read_csv(fname,header=None)
+
+                
+        line.set_data((file0[1]-file0[1][np.argmax(file0[3])])/minute,file0[2])
+        ax.relim()
+        ax.autoscale_view()
+
+        lineHO.set_data((file0[1]-file0[1][np.argmax(file0[3])])/minute,file0[3])#
+        axHO.relim()
+        axHO.autoscale_view()
+
+        fig.canvas.draw_idle()
+
+#interval in ms
+ani = FuncAnimation(fig,update, interval=2*1000, cache_frame_data=False)
+
+
+plt.show()
