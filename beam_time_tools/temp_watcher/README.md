@@ -7,7 +7,7 @@ The bones of the animation were put together by Goncalo Baptista but I stole it 
 plot_live.py
 --
 
-This plots (as written) the last hour of temp evolution with a rolling window.
+This plots (as written) the last 10 mins of temp evolution with a rolling time window updated every 2 seconds.
 If I've done it right, this does not hold anything in the cache and has at least 1 night of over-night operations confirmed.
 
 
