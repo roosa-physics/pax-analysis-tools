@@ -15,3 +15,6 @@ Example output:
 `python plot_live.py ADRLog_example.txt`
 
 ![Example](./Figure_1.png)
+
+
+I'll note the computer this runs on has pandas 3.0.0 and my personal computer has 3.0.1. To get this to run with 3.0.1 you will probably need to add a delimiter flag to catch the `\t`s.  
