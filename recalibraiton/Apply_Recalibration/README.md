@@ -15,7 +15,10 @@ This is pretty straight forward:
 
 
 
-Side Note 
+Uncertainty Quantification
 --
 Steps 1 and 2 basically set me up to do more in-depth UQ with the splines. 
 I could try diffrent spline strategies, calculate drop 1's or do a sensitivity check with my knot uncertainties. 
+
+As a coarse demo, I include `UQ_plot.py` which shows the energy deviation from a linear trend in pulse height -> energy with energy uncertainties for 3 channels. 
+![myplot]{./UQ_ex.png}
