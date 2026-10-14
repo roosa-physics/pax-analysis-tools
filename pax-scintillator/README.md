@@ -10,3 +10,9 @@ Final analysis needed some additional data sorting and matchting; there was a se
 
 This has the functions, including plotting tools, I used.
 It requires the proprietary LecroyParser library. 
+
+An example of a summed pulse used to guess good integration bounds: 
+![example](./ex_sumpulse.png)
+
+An example spill profile from 1 run of data: 
+![example](./ex_spillprofile.png)
